@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-950 text-gray-100 font-orbitron;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-mk-yellow text-gray-950 font-bold rounded-lg 
+           hover:shadow-neon transition-all duration-300 
+           hover:scale-105 active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 bg-gray-800 text-gray-100 font-bold rounded-lg 
+           border-2 border-mk-yellow hover:bg-gray-700 
+           transition-all duration-300 hover:scale-105 active:scale-95;
+  }
+
+  .btn-danger {
+    @apply px-6 py-3 bg-red-600 text-white font-bold rounded-lg 
+           hover:shadow-neon-red transition-all duration-300 
+           hover:scale-105 active:scale-95;
+  }
+
+  .card {
+    @apply bg-gray-900 border-2 border-gray-800 rounded-xl p-6 
+           hover:border-mk-yellow transition-all duration-300;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 bg-gray-800 text-gray-100 
+           border-2 border-gray-700 rounded-lg 
+           focus:border-mk-yellow focus:outline-none 
+           transition-colors duration-200;
+  }
+
+  .badge {
+    @apply px-3 py-1 text-xs font-bold rounded-full uppercase;
+  }
+
+  .badge-live {
+    @apply badge bg-red-500 text-white animate-pulse-neon;
+  }
+
+  .badge-ended {
+    @apply badge bg-gray-600 text-gray-300;
+  }
+
+  .badge-final {
+    @apply badge bg-mk-yellow text-gray-950;
+  }
+
+  .badge-upcoming {
+    @apply badge bg-blue-500 text-white;
+  }
+
+  .neon-border {
+    @apply border-2 border-mk-yellow shadow-neon;
+  }
+
+  .page-container {
+    @apply min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950;
+  }
+
+  .content-wrapper {
+    @apply max-w-7xl mx-auto px-4 py-8;
+  }
+
+  .title-neon {
+    @apply text-4xl md:text-5xl font-black text-mk-yellow 
+           drop-shadow-[0_0_10px_rgba(255,215,0,0.5)];
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FFD700;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FFA500;
+}
