@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowLeft, Trophy, Swords } from "lucide-react";
+import { ArrowLeft, Swords } from "lucide-react";
 import toast, { Toaster } from "react-hot-toast";
 import PlayerStats from "../components/PlayerStats";
 import MatchCard from "../components/MatchCard";
